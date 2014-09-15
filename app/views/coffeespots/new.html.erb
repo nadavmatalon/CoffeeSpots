@@ -1,17 +1,22 @@
-<h2>Add a new CoffeeSpot</h2>
 
-<%= form_for @coffeespot do |coffeespot| %>
+<div class='page-subtitle-container'>
+    <p class='page-sub-title'>Add a new CoffeeSpot</p>
+</div>
+<div class='sign-in-form'>
 
-	<% @coffeespot.errors.full_messages.each do |message| %>
-		<p><%= message %></p>
-	<% end %><br/>
+	<%= form_for @coffeespot do |coffeespot| %>
 
-  <%= coffeespot.label :name %><br/>
-  <%= coffeespot.text_field :name, autofocus: true %><br/>
+		<% @coffeespot.errors.full_messages.each do |message| %>
+			<p><%= message %></p>
+		<% end %><br/>
 
-  <%= coffeespot.label :url %><br/>
-  <%= coffeespot.text_field :url %><br/>
+	  <%= coffeespot.label :name %><br/>
+	  <%= coffeespot.text_field :name, autofocus: true %><br/>
 
-  <%= coffeespot.submit 'Add Spot' %>
+	  <%= coffeespot.label :url %><br/>
+	  <%= coffeespot.text_field :url %><br/>
 
-<% end %>
+	  <%= coffeespot.submit 'Add Spot' %>
+
+	<% end %>
+</div>
