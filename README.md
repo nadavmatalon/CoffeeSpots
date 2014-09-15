@@ -13,8 +13,8 @@
 ##Screenshot
 
 <div width="600px" >
-	<a href="https://raw.githubusercontent.com/nadavmatalon/CoffeeSpots/master/app/assets/images/coffeespots-screenshot.jpg">
-		<img src="/app/assets/images/coffeespots-screenshot.jpg" height="290px" />
+	<a href="https://raw.githubusercontent.com/nadavmatalon/CoffeeSpots/master/app/assets/images/coffeespots-screenshot.png">
+		<img src="/app/assets/images/coffeespots-screenshot.png" width="690" height="400px" />
 	</a>
 </div>
 
