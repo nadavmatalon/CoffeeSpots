@@ -67,7 +67,7 @@ The app has been tested with and supports the following browsers
 
 ##Testing
 
-Tests were written with [Rspec](http://rspec.info) (3.0.2) &amp;  
+Tests were written with [Rspec](http://rspec.info) (3.0.2) &amp; 
 [Capybara](https://github.com/jnicklas/capybara) (2.4.1).
 
 The tests cover both back-end logic and front-end functionality.
