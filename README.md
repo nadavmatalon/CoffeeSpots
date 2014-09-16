@@ -57,27 +57,29 @@ for testing.
 
 ##Browsers
 
- This app has been tested with and supports the following browsers:
+The app has been tested with and supports the following browsers 
+(though it should hopefully look decent in other browsers as well):
 
 * __Google Chrome__ (36.0)
 * __Mozilla Firefox__ (31.0)
 * __Apple Safari__ (7.0.5)
 
 
-##  Testing
+##Testing
 
-Tests were written with [Rspec](http://rspec.info) (3.0.2) & 
+Tests were written with [Rspec](http://rspec.info) (3.0.2) &amp;  
 [Capybara](https://github.com/jnicklas/capybara) (2.4.1).
 
 The tests cover both back-end logic and front-end functionality.
 
-To run the tests in terminal: 
+To run the tests in terminal, clone the repo locally and run: 
 
 ```bash
-$ rspec
+$> cd CoffeeSpots
+$> rspec
 ```
 
-##  License
+##License
 
 <p>Released under the <a href="http://www.opensource.org/licenses/MIT">MIT license</a>.</p>
 
