@@ -13,15 +13,11 @@ class ReviewsController < ApplicationController
     end
 
     def show
-        @review = Review.find params[:id]
-        @coffeespot = Coffeespot.find_by_id(@review.coffeespot_id)
-        @user = User.find_by_id(@review.user_id)
+        get_review_data
     end
-    
+
     def edit
-        @review = Review.find_by_id params[:id]
-        @coffeespot = Coffeespot.find_by_id(@review.coffeespot_id)
-        @user = User.find_by_id(@review.user_id)
+        get_review_data
     end
 
     def update
@@ -44,6 +40,12 @@ class ReviewsController < ApplicationController
 
     def review_params
         params[:review].permit(:thoughts, :rating, :user_id)
+    end
+
+    def get_review_data
+        @review = Review.find params[:id]
+        @coffeespot = Coffeespot.find_by_id(@review.coffeespot_id)
+        @user = User.find_by_id(@review.user_id)
     end
 
     def save review
