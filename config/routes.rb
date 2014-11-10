@@ -1,17 +1,18 @@
 Rails.application.routes.draw do
-  devise_for :users
 
-  root 'coffeespots#index'
+	devise_for :users
 
-  resources :posts
+	root 'coffeespots#index'
 
-  resources :users do
-   	resources :reviews
-  end
+	resources :posts
 
-  resources :coffeespots do
-   	resources :reviews
-  end
+	resources :users do
+		resources :reviews
+	end
 
+	resources :coffeespots do
+		resources :reviews
+	end
 
 end
+

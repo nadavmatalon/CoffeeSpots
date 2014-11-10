@@ -1,3 +1,4 @@
+require 'rails_helper'
 
 describe 'form for creating Posts' do
  

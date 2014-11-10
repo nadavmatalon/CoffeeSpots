@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.1.1'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.2'
 # Use postgresql as the database for Active Record
@@ -10,17 +12,11 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails', '~> 4.0.0'
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer',  platforms: :ruby
-
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '~> 3.1.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
-# bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0',          group: :doc
-
-# Devise is a flexible authentication solution for Rails based on Warden
+# https://github.com/plataformatec/devise
 gem 'devise', '~> 3.2.4'
 # https://github.com/twbs/bootstrap-sass
 gem 'bootstrap-sass', '~> 3.2.0'
@@ -32,9 +28,9 @@ gem 'sprockets', '~> 2.11.0'
 gem 'thin', '~> 1.6'
 
 group :test, :development do
-
+    # https://github.com/rspec/rspec-rails
   	gem 'rspec-rails', '~> 3.0.0'
-
+    # https://github.com/DatabaseCleaner/database_cleaner
 	gem 'database_cleaner', '~> 1.3.0'
     # https://github.com/jnicklas/capybara
     gem 'capybara', '~> 2.4.1'
@@ -51,16 +47,4 @@ group :test, :development do
     # https://github.com/rspec/rspec-collection_matchers
     gem 'rspec-collection_matchers', '~> 1.0.0'
 end
-
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
-
-# Use unicorn as the app server
-# gem 'unicorn'
-
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
 

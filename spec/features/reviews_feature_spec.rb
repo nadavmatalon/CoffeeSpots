@@ -27,7 +27,6 @@ describe 'Adding reviews to coffeespots' do
 	end
 end
 
-
 def create_user (email = "user@example.com", password = "password", password_confirmation = "password")
     User.create(email: email, password: password, password_confirmation: password_confirmation)
 end

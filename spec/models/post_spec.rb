@@ -1,3 +1,4 @@
+require 'rails_helper'
 
 describe Post do
 
@@ -32,7 +33,7 @@ end
 
 
 def create_post (title = 'Test Post', content = 'test content') 
-	Post.create(title: 'Test Post', content: 'test content') 
+	Post.create(title: title, content: content) 
 end
 
 

@@ -1,6 +1,6 @@
 
 <div class='page-subtitle-container'>
-    <p class='page-sub-title'>Add a new CoffeeSpot</p>
+	<p class='page-sub-title'>Add a new CoffeeSpot</p>
 </div>
 <div class='sign-in-form'>
 
@@ -10,13 +10,14 @@
 			<p><%= message %></p>
 		<% end %><br/>
 
-	  <%= coffeespot.label :name %><br/>
-	  <%= coffeespot.text_field :name, autofocus: true %><br/>
+		<%= coffeespot.label :name %><br/>
+		<%= coffeespot.text_field :name, autofocus: true %><br/>
 
-	  <%= coffeespot.label :url %><br/>
-	  <%= coffeespot.text_field :url %><br/>
+		<%= coffeespot.label :url %><br/>
+		<%= coffeespot.text_field :url %><br/>
 
-	  <%= coffeespot.submit 'Add Spot' %>
+		<%= coffeespot.submit 'Add Spot' %>
 
 	<% end %>
 </div>
+

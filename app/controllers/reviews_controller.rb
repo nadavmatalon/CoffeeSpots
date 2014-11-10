@@ -9,13 +9,7 @@ class ReviewsController < ApplicationController
     def create
         @coffeespot = Coffeespot.find params[:coffeespot_id]
         @review = @coffeespot.reviews.new review_params
-        @review.user_id = current_user.id
-        if @review.save
-            flash[:notice] = 'Review added!'
-            redirect_to '/coffeespots'
-        else
-            render 'new'
-        end
+        save @review
     end
 
     def show
@@ -50,6 +44,16 @@ class ReviewsController < ApplicationController
 
     def review_params
         params[:review].permit(:thoughts, :rating, :user_id)
+    end
+
+    def save review
+        review.user_id = current_user.id
+        if review.save
+            flash[:notice] = 'Review added!'
+            redirect_to '/coffeespots'
+        else
+            render 'new'
+        end
     end
 
 end

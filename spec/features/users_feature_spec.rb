@@ -43,7 +43,6 @@ describe 'Users registration' do
 
 end
 
-
 def create_user (email = "user@example.com", password = "password", password_confirmation = "password")
     User.create(email: email, password: password, password_confirmation: password_confirmation)
 end
@@ -54,3 +53,4 @@ def sign_in_user
     fill_in 'Password', with: 'password'
     click_button 'Sign in'
 end
+

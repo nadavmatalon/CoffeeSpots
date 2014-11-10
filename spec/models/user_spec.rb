@@ -1,3 +1,4 @@
+require 'rails_helper'
 
 describe User do
 
@@ -74,7 +75,6 @@ describe User do
 		expect(User.first.email).to eq 'user@example.com'
 	end	
 
-
 	it 'can have a coffeespot' do
 		user = create_user
 		user.coffeespots << create_coffeespot
@@ -94,7 +94,6 @@ describe User do
 	end
 
 end
-
 
 def create_user (email = "user@example.com", password = "password", password_confirmation = "password")
 	User.create(email: email, password: password, password_confirmation: password_confirmation)
