@@ -53,3 +53,4 @@ class CoffeespotsController < ApplicationController
     end
 
 end
+
