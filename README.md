@@ -1,10 +1,13 @@
 #CoffeeSpots
 
+[![Code Climate](https://codeclimate.com/github/nadavmatalon/CoffeeSpots/badges/gpa.svg)](https://codeclimate.com/github/nadavmatalon/CoffeeSpots)
+
 ##Table of Contents
 
 * [Screenshot](#screenshot)
 * [General Description](#general-description)
 * [Functional Description](#functional-description)
+* [How to Install](#how-to-install)
 * [Browsers](#browsers)
 * [Testing](#testing)
 * [License](#license)
@@ -21,12 +24,11 @@
 
 ##General Description
 
-__CoffeeSpots__ is a simple web app for collecting and storing user 
-reviews about their favourite coffee-shops.
+__CoffeeSpots__ is a [Rails](http://rubyonrails.org/) app for collecting and 
+storing user reviews about their favourite coffee-shops.
 
 The first iteration of this app was created while pair-programming with 
-[Roi Driscoll](https://github.com/roidriscoll) and it represents our first encouter 
-with [Ruby on Rails](http://rubyonrails.org/) during week 8 of 
+[Roi Driscoll](https://github.com/roidriscoll) during week 8 of 
 the course at [Makers Academy](http://www.makersacademy.com/).
 
 The name 'CoffeeSpots' was [Roi](https://github.com/roidriscoll)'s idea.
@@ -44,7 +46,7 @@ for testing.
 
 ##Functional Description
 
-* All users (register & unregistered) can see the list of CoffeeSpots & reviews
+* Users (register & unregistered) can see the list of CoffeeSpots & reviews
 * Users can see the 'show' page for a specific CoffeeSpot by clicking on its name
 * Users can go to a Coffeeshop webpage by clicking on its Url link
 * Users can see the 'show' page for a specific CoffeeSpot by clicking its name
@@ -53,6 +55,27 @@ for testing.
 * Only registered users can add new CoffeeSpots and/or reviews
 * Only the user who added a specific CoffeeSpot can edit or delete it
 * Only the user who added a specific review can edit or delete it
+* The hopepage shows the average rating for each CoffeeSpot based on it's ratings
+
+
+##How to Install
+
+To install the app locally, clone the repo to a local folder and run: 
+
+```bash
+$> cd CoffeeSpots
+$> bundle install
+$> bin/rake db:migrate 
+$> bin/rake db:migrate RAILS_ENV=test
+$> bin/rake db:migrate
+$> rails server
+```
+
+Then open the browser of your choice and go to:
+
+```
+http://localhost:3000
+```
 
 
 ##Browsers
